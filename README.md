@@ -47,6 +47,15 @@ Details and firmware addresses are in [`docs/haptic-engine.md`](docs/haptic-engi
 
 Free space in app `69C6B03C` is 34,280 bytes, enough for about 8 s of samples.
 
+## Scripts
+
+In the folder [`scripts/`](scripts/) are reduced versions of the scripts, that I used to modify the firmware of my Steam Deck Controller Board. They are meant as a reference. I did not test them, after cutting them down, so use at your own risk.
+The script mute_jingle.py replaces the jingle with silence.
+The script replace_jingle.py replaces the jinge with twinke, twinkle little star.
+The script fix_checksum.py calculates and fixes the app's checksum.
+flash_app.py is used for flashing the app onto the controler board. It needs to be run on the steam deck itself with root permissions. 
+The file firmware_common.py is the base reference for the four scripts. it needs to be in the same folder as the other scripts. 
+
 ## Warning
 
 - A bad image or an interrupted write leaves the board without a working app, and the controls will not work until a valid image is written. Keep the backup from step 1. Use at your own risk.
