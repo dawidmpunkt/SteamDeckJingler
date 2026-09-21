@@ -16,4 +16,4 @@ steamdeck-controller-*/
 *.s8
 *.wav
 *.mp3
-*.mp4
+#*.mp4
