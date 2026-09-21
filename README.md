@@ -15,7 +15,7 @@ The controller board drives the trackpad actuators with a small synthesizer. It 
 
 ## How does it sound?
 
-See [`examples/`](examples/) e.g. a first test of [`"Secret discovered"`](examples/zelda-secret.mp4) or  [`"Are you still there?"`](examples/are_you_still_there.mp4)
+See [`examples/`](examples/) e.g. a first test of [`"Secret discovered"`](examples/secret-discovered.mp4) or  [`"Are you still there?"`](examples/are_you_still_there.mp4)
 
 ## Supported hardware
 
