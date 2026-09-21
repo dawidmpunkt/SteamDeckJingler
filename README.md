@@ -15,7 +15,7 @@ The controller board drives the trackpad actuators with a small synthesizer. It 
 
 ## How does it sound?
 
-See examples [`examples/`] e.g. a first test of "Secret discovered" [`examples/zelda-secret.mp4`] or "Are you still there?" [`examples/are_you_still_there.mp4`]
+See examples → [`examples/`] e.g. a first test of "Secret discovered" → [`examples/zelda-secret.mp4`] or "Are you still there?" → [`examples/are_you_still_there.mp4`]
 
 ## Supported hardware
 
@@ -50,5 +50,5 @@ Free space in app `69C6B03C` is 34,280 bytes, enough for about 8 s of samples.
 ## Warning
 
 - A bad image or an interrupted write leaves the board without a working app, and the controls will not work until a valid image is written. Keep the backup from step 1. Use at your own risk.
-- Do not share or commit firmware dumps. They are Valve's firmware, and collector archives contain your Deck and board serial numbers and per-unit factory data. `.gitignore` blocks the usual file types.
+- Do not share or commit firmware dumps. They are Valve's firmware, and collector archives contain your Deck and board serial numbers and per-unit factory data.
 - This project is not affiliated with Valve.
