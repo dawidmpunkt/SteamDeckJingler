@@ -1,0 +1,19 @@
+# Never commit firmware dumps, patched images or backups (Valve's firmware, not ours to redistribute).
+# Collector archives and boot-ROM dumps also contain Deck/board serial numbers, device IDs and per-unit factory data.
+*.bin
+*.hex
+*.srec
+*.s19
+*.mot
+*.dump
+*.bak
+*.tar.gz
+rom-dump.json
+manifest.json
+# Unpacked collector archives (same name as the archive, without .tar.gz)
+steamdeck-controller-*/
+# Jingle audio / sample data (may be third-party material)
+*.s8
+*.wav
+*.mp3
+*.mp4
