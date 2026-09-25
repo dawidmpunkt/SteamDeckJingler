@@ -1,0 +1,4 @@
+# Python modules for the tools in guide/ (Windows and Linux).
+# Install:  python -m pip install -r guide/requirements.txt
+hidapi>=0.14    # USB HID access to the controller (Windows; fallback on Linux)
+pyserial>=3.5   # USB serial access to the controller's bootloader
