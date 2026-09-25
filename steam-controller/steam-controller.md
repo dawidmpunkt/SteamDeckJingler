@@ -8,6 +8,13 @@ Tested on Linux (Bazzite 44/Fedora) and Windows 11 (todo)
 
 ## Requirements:
 
+1. put the following 4 files in a folder
+- scbackup.py
+- schid.py
+- requirements.txt
+- firmware-table.json
+2. install requirements for your system below
+
 ### Windows (not tested yet)
 
 1. Install Python (3.11 or newer), either way:
@@ -30,3 +37,7 @@ On my system I ran a small environment inside the project folder, which also nee
 - source .venv/bin/activate         
 - python -m pip install -r guide/requirements.txt
 4.USB access: Users may need one extra permission rule (a udev rule).
+
+## Run the backup-tool (backup firmware first)
+- python scbackup.py
+the tool will guilde you through the backup process
