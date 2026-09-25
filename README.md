@@ -1,6 +1,6 @@
-# SteamDeckJingler
+# SteamDeckJingler (for Steam Deck and Steam Controller)
 
-Change or mute the startup jingle of the Steam Deck controller board, and document its haptic engine along the way.
+Change or mute the startup jingle of the Steam Deck controller board (as of 25.09.26 also building a version for the steam controller), and document its haptic engine along the way.
 
 Disclaimer: Yes, Claude Code was utilized during disassembly and writing documentation and code.
 
@@ -23,6 +23,9 @@ See [`examples/`](examples/) e.g. a first test of [`"Secret discovered"`](exampl
 |---|---|
 | Renesas RA4E1 (used in both LCD and OLED Decks) | Supported. Analysed on app builds `65E4F1AD` (pre 2026) and `69C6B03C` (2026). |
 | Microchip SAMD boards | Not supported and not analysed. The app is probably similar, but free space, addresses and possibly the checksum will differ. |
+
+### Steam Controller
+See [`steam-controller/steam-controller.md`](steam-controller/steam-controller.md)
 
 ## Key findings
 
