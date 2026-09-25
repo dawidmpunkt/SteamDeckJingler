@@ -1,1 +1,165 @@
-
+{
+ "_readme": "Shared table of known controller firmware versions. No firmware bytes, only hashes and offsets. status: known = identified only; mapped = offsets found, untested; verified = tested on hardware. backup/patch sections have their own status. Tools refuse versions whose needed section is missing. Never put serials, names, paths or other device data into notes; describe tested units generically.",
+ "schema": 1,
+ "builds": {
+  "69B8A395": {
+   "device": "ibex",
+   "date": "2026-03-17",
+   "fw_file": "IBEX_FW_69B8A395.fw",
+   "fw_sha256": "37d9ea6779fb28d8064265d30b49cb1f7b9bea456b28e542f64052002a59de6a",
+   "app_magic": "0xD2D86467",
+   "app_len": "0x5BD20",
+   "app_crc32": "0x697AE5D8",
+   "status": "verified",
+   "backup": {
+    "status": "mapped",
+    "settings_keys": [
+     "mte/charge_level",
+     "cal/volt_offset",
+     "cal/touch_l",
+     "cal/touch_r",
+     "cal/prs_l",
+     "cal/prs_r",
+     "cal/joy_l",
+     "cal/joy_r",
+     "cal/trg_l",
+     "cal/trg_r",
+     "cal/sensors/gyroscope/bias",
+     "cal/rgbw_r",
+     "cal/rgbw_g",
+     "cal/rgbw_b",
+     "cal/rgbw_w",
+     "bt/name",
+     "bt/id",
+     "bt/hash",
+     "esb/bond",
+     "esb/bond_2",
+     "user/wireless_transport",
+     "user/haptic_boot_level",
+     "user/keylock",
+     "settings/haptics/enabled",
+     "settings/haptics/amplifier_mode",
+     "settings/haptics/haptic_master_gain_db",
+     "settings/sensors/imu/mode",
+     "settings/sensors/imu/mounting_matrix"
+    ],
+    "nvs": [
+     "0x7D000",
+     "0x80000"
+    ],
+    "notes": "keys from firmware strings + NVS of one unit; 0xED read path not yet tested on hardware",
+    "feature_table": "0x63B90",
+    "read_setting_get": "0x48921",
+    "not_readable": [
+     "cal/sensors/gyroscope/bias",
+     "bt/name",
+     "bt/id",
+     "bt/hash"
+    ]
+   },
+   "patch": {
+    "status": "verified",
+    "hook_site": "0x3D5FC",
+    "hook_bytes_len": 6,
+    "hook_bytes_sha256": "b081b9e82247f4470e277c185b2aeec2566f83ad843052c1f778b3f027956b43",
+    "stock_table": "0x63B48",
+    "chan_table": "0x55090",
+    "seq_put": "0x513AB",
+    "set_us": "0x21D91",
+    "get_us": "0x21DE5",
+    "feat_dc_set": "0x63C6C",
+    "feat_db_get": "0x63BF8",
+    "flash_dev": "0x529C8",
+    "flash_write": "0x361D9",
+    "flash_erase": "0x36115",
+    "step_range": [
+     "0x3D600",
+     "0x3DE00"
+    ],
+    "app_end": "0x63D20",
+    "code_page": "0x64000",
+    "sound_area": [
+     "0x65000",
+     "0x7C000"
+    ],
+    "build_ts_at": "0x8120"
+   },
+   "notes": "not in the public Steam archive; .fw rebuilt from an SWD dump. Sound patch flashed + tested 2026-09-24.",
+   "git": "5aeb5b734f1e"
+  },
+  "6A628345": {
+   "device": "ibex",
+   "date": "2026-07-23",
+   "fw_file": "IBEX_FW_6A628345.fw",
+   "fw_sha256": "865b4a7b1786c4a9990375759548331d313170c3e3b4c5897e16dc01b9ab12a8",
+   "app_magic": "0xD2D86467",
+   "app_len": "0x5DDBC",
+   "app_crc32": "0x0009E42D",
+   "status": "known",
+   "backup": {
+    "status": "verified",
+    "settings_keys": [
+     "mte/charge_level",
+     "cal/volt_offset",
+     "cal/touch_l",
+     "cal/touch_r",
+     "cal/prs_l",
+     "cal/prs_r",
+     "cal/joy_l",
+     "cal/joy_r",
+     "cal/trg_l",
+     "cal/trg_r",
+     "cal/sensors/gyroscope/bias",
+     "cal/rgbw_r",
+     "cal/rgbw_g",
+     "cal/rgbw_b",
+     "cal/rgbw_w",
+     "bt/name",
+     "bt/id",
+     "bt/hash",
+     "esb/bond",
+     "esb/bond_2",
+     "user/wireless_transport",
+     "user/haptic_boot_level",
+     "user/keylock",
+     "settings/haptics/enabled",
+     "settings/haptics/amplifier_mode",
+     "settings/haptics/haptic_master_gain_db",
+     "settings/sensors/imu/mode",
+     "settings/sensors/imu/mounting_matrix",
+     "debug/resetreason",
+     "settings/sensors/imu/gyro_threshold",
+     "settings/sensors/imu/use_bias"
+    ],
+    "nvs": [
+     "0x7D000",
+     "0x80000"
+    ],
+    "notes": "hardware 2026-09-25 (maintainer's unit): 0xED returns cal/*, esb/bond, user/*, mte/*, debug/resetreason; values equal the NVS dump. not_readable = stored in NVS but no read path (settings handler has no get).",
+    "feature_table": "0x65C18",
+    "read_setting_get": "0x42B1B",
+    "not_readable": [
+     "cal/sensors/gyroscope/bias",
+     "bt/name",
+     "bt/id",
+     "bt/hash"
+    ]
+   },
+   "patch": null,
+   "notes": "Steam hardwareupdater 2026-07-27; Steam force-updated the test controller to it (seen 2026-09-25). Sound patch not ported yet."
+  },
+  "6A628359": {
+   "device": "proteus",
+   "date": "2026-07-23",
+   "fw_file": "PROTEUS_FW_6A628359.fw",
+   "fw_sha256": "b84853fec0d40c9dfe7948a4d37cbbf17e58f60962897f3ba5bda867253a6934",
+   "app_magic": "0x2E795631",
+   "app_len": "0x30558",
+   "app_crc32": "0x747A4771",
+   "status": "known",
+   "backup": null,
+   "patch": null,
+   "notes": "puck firmware; not used by the tools yet"
+  }
+ }
+}
