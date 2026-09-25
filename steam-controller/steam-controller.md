@@ -8,7 +8,7 @@ Tested on Linux (Bazzite 44/Fedora) and Windows 11 (todo)
 
 ## Requirements:
 
-1. put the following 4 files in a folder
+1. put the following 4 files  [`(click here)`](tool/)  in a folder
 - scbackup.py
 - schid.py
 - requirements.txt
