@@ -2,7 +2,7 @@
 
 Change or mute the startup jingle of the Steam Deck controller board (as of 25.09.26 also building a version for the steam controller), and document its haptic engine along the way.
 
-Disclaimer: Yes, Claude Code was utilized during disassembly and writing documentation and code.
+Disclaimer: Yes, Claude Code was utilized during disassembly and writing documentation and code. The general idea (changing the pointers and writing the jingle into empty firmware area) was mine. Similar ideas came up during manual RE-ing of the controller board firmware during the years, while working on modifications on how to improve rumble effects. Projects like [SteamHapticsSinger](https://github.com/CrazyCritic89/SteamHapticsSinger) (Pilatomic, Roboron3042, Crazycritic89) provided insight and inspiration.  
 
 ## Background
 
