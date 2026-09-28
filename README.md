@@ -60,9 +60,11 @@ flash_app.py is used for flashing the app onto the controler board. The flashing
 The file firmware_common.py is the base reference for the four scripts. it needs to be in the same folder as the other scripts. 
 
 ## Futher ideas
-[] While investigating the haptics implementation in the steam controller, the idea came up to modify the haptics engine of the Steam Deck controller to run at a higher sample rate. Thus, higher sample rate audio clips could be possible.
-[] I will build a test rig to evaluate the maximum safe output of the LRAs and the audio circuit driving them. Thus I can find the maximum allowed gain for the jingle/general rumble effets.
-[] I will analyze the output characteristic of the actuators on the Deck. Output of the actuators is higher at lower frequencies (expected: around 170 Hz, resonance frequency. But could change with coupled mass mounting/trackpad or thumbs) vs higher frequencies. Samples should be adjusted for that (attenuating lower frequencies and boosting higher frequencies) to avoid distortion and strain on the circuit/actuators.
+[ ] While investigating the haptics implementation in the steam controller, the idea came up to modify the haptics engine of the Steam Deck controller to run at a higher sample rate. Thus, higher sample rate audio clips could be possible.
+
+[ ] I will build a test rig to evaluate the maximum safe output of the LRAs and the audio circuit driving them. Thus I can find the maximum allowed gain for the jingle/general rumble effets.
+
+[ ] I will analyze the output characteristic of the actuators on the Deck. Output of the actuators is higher at lower frequencies (expected: around 170 Hz, resonance frequency. But could change with coupled mass mounting/trackpad or thumbs) vs higher frequencies. Samples should be adjusted for that (attenuating lower frequencies and boosting higher frequencies) to avoid distortion and strain on the circuit/actuators.
 
 ## Warning
 
